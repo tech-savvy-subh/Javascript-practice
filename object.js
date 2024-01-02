@@ -101,7 +101,7 @@ const course={
   price: "999",
   instructor: "Jishu"
 }
-const {instructor,coursename,price}=course //A way of destructuring
+const {instructor,coursename,price}=course //An way of destructuring
 console.log(instructor)
 const {instructor:Inst,coursename:cname,price:p}=course//using alias for thr keys
 console.log(Inst)
