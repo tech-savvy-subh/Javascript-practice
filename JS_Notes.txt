@@ -1,0 +1,81 @@
+Javascript Notes:
+When to Use var, let, or const?
+1. Always declare variables
+
+2. Always use const if the value should not be changed.
+
+3. Always use const if the type should not be changed (Arrays and Objects)
+
+4. Only use let if you can't use const.
+
+5. Only use var if you MUST support old browsers.
+
+Creating a variable in JavaScript is called "declaring" a variable.
+
+You declare a JavaScript variable with the var or the let keyword.
+
+After the declaration, the variable has no value (technically it is undefined).
+A variable declared without a value will have the value undefined.
+ex: var x; //x is undefined here.
+x=5; //value has been assigned to x which is 5 and right now it is not undefined but a number.
+
+It's a good programming practice to declare all variables at the beginning of a script.
+To assign a value to the variable, use the equal sign(=)
+
+You can declare many variables in one statement.
+//let person = "John Doe", carName = "Volvo", price = 200;
+
+A declaration can span multiple lines:
+/* let person = "John Doe",
+carName = "Volvo",
+price = 200; */
+
+If you re-declare a JavaScript variable declared with var, it will not lose its value.
+/* 
+var carName = "Volvo";
+var carName;
+*/
+
+You cannot re-declare a variable declared with let or const.
+
+This will not work:
+/*
+let carName = "Volvo";
+let carName;
+*/
+
+As with algebra, you can do arithmetic with JavaScript variables, using operators like = and +:
+let x = 5 + 2 + 3; //value of x will be 10 here
+let x = "5" + 2 + 3;// value of x will be 523 and If you put a number in quotes, the rest of the numbers will be treated as strings, and concatenated.
+let x = 2 + 3 + "5";// value will be 55 and type of x will be same and treated as string just like above
+ 
+Let:
+The let keyword was introduced in ES6 (2015)
+
+Variables defined with let cannot be Redeclared
+
+Variables defined with let must be Declared before use
+
+Variables defined with let have Block Scope
+Variables declared inside a { } block cannot be accessed from outside the block:
+{
+  let x = 2;
+}
+// x can NOT be used outside of this {} block
+
+Variables declared inside a { } block can be accessed from outside the block.
+{
+  var x = 2;
+}
+// x CAN be used outside of this {} block and Variables declared with the var keyword can NOT have block scope.
+
+That is how blocked scope work for let/const
+let x = 10;
+// Here x is 10
+
+{
+let x = 2;
+// Here x is 2
+}
+
+// Here x is 10
