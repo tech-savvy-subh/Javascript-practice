@@ -79,3 +79,17 @@ let x = 2;
 }
 
 // Here x is 10
+
+// "use strict" enforces u to use newer version of JavaScript
+
+Datatypes
+//number ->2^53
+//bigInt ->larger value than number 
+//string -> ""
+//boolean-> true/false
+//null -> (a standalone object)
+//undefined->placeholder
+//symbol->unique
+//object->
+
+using typeof method we can define the type.
