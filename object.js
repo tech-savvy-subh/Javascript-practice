@@ -1,6 +1,6 @@
 //Objects can be defined in many ways
 // Singleton
-//objects can be create dusing Object.create
+//objects can be created using Object.create
 
 //Object literals
 // Defining a Symbol
@@ -60,7 +60,7 @@ console.log(tinderUser?.fullname?.firstnam)
 //All of the below output will be put inside an array 
 console.log(Object.values(tinderUser));//printing values of the object tinderuser
 console.log(Object.keys(tinderUser));//printing keys of the object tinderuser
-console.log(Object.entries(tinderUser))//printing entries in aneste array 
+console.log(Object.entries(tinderUser))//printing entries in a nested array 
 console.log(tinderUser.hasOwnProperty("fullname"))//if the fullname key exist or not and will return boolean
 console.log(tinderUser.fullname.hasOwnProperty("firstname"))//for nested objects
 
