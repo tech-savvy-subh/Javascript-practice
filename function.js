@@ -59,3 +59,36 @@ function loginUserMessage(username = "sam") {
 
 console.log(loginUserMessage("")); //if you pass empty value it will print default value sam
 console.log(loginUserMessage("jishu")); //if you pass jishu it will print jishu
+
+//Rest Operator
+function calculateCartPrice(val1, val2, ...num1){ //spread and res operator is same you just need to know when to use it
+    return num1 //this will print 500,2000 because val1 is referring to 200 and val2 is referring to 400
+}
+
+console.log(calculateCartPrice(200, 400, 500, 2000))
+
+//passing object as an param in function
+const user = {
+    username: "jishu",
+    prices: 199
+}
+
+function handleObject(anyobject){
+    console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`); 
+}
+
+handleObject(user)
+handleObject({
+    username: "sam",
+    price: 399
+}) //both way we can pass the argument which is of type object
+
+//passing array to an object
+const myNewArray = [200, 400, 100, 600]
+
+function returnSecondValue(getArray){
+    return getArray[1]
+}
+
+console.log(returnSecondValue(myNewArray));
+console.log(returnSecondValue([200, 400, 500, 1000])); //this also goes same as type of arg is an array
