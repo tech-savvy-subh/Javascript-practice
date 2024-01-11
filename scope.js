@@ -3,7 +3,8 @@
 function a(){
 console.log(b);
 //for the above line first it will try to access b in local memory if not it will search in global scope and fetch it and return 10
-//you might think why it did not return not-defined or undefined but it will not it will fetch the value from global scope and return it.
+//you might think why it did not return not-defined or undefined but it will not it will fetch the value from global scope and 
+//return it.
 }
 var b=10;
 a();
@@ -28,3 +29,19 @@ lexical environment of function y is it's local memory+lexical environment of fu
 lexical environment of function x is it's local memory+lexical environment of global space
 and y has access to scope of x and it's parent which is also known as scope chain.
 */
+
+// ++++++++++++++++++ interesting ++++++++++++++++++
+//when you use functions as variable the scope of that will change .
+
+console.log(addone(5))//this will not throw any error
+
+function addone(num){
+    return num + 1
+}
+
+
+
+addTwo(5)//this will throw error as addTwo fucntion is a variable and wea re trying to access it before initialization
+const addTwo = function(num){
+    return num + 2
+}
