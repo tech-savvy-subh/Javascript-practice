@@ -93,3 +93,19 @@ Datatypes
 //object->
 
 using typeof method we can define the type.
+
+
+// global execution context-->this
+//memory phase-->variables declared as undefined place holder
+//function defination 
+//execution phase--> variables initialized with actual values
+//function will create it's own execution context[new variable env+ execution thread]
+//same will be followed and code will be executed
+//once execution is finishied execution context will be deleted.
+//all this execution contexts including global execution context gets stored in callstack.
+//it maintains lifo order in callstack
+
+//Types of execution context
+// global execution context
+// function execution context
+// eval execution context
