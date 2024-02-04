@@ -48,7 +48,7 @@ console.log(`the price is: ${paisa} `) //wwe can access paisa outside if scope a
 //more than one condition
 const doesUserIdExist=true
 const isAlive=true
- if(doesUserIdExist && isAlive){
+ if(doesUserIdExist && isAlive){ //just like && we can use || where it will only need to check if one condition satisfies
     console.log("user is alive and id is also there")
  }
 

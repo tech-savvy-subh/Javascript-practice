@@ -6,11 +6,12 @@ const hello = (name, greeting) => {
     role: "Js Dev",
     exp: 30,
     show: function () {
-      console.log(this);//here in normal function this is referring to object x in it's  parent's ;exical scope
+      console.log(this);//here in normal function this is referring to object x in it's  parent's lexical scope
       console.log("My name is " + this.name);
       console.log("My role is " + this.role);
       setTimeout(function () {
-        console.log(this);//but inside this function it is referring to global window object not x ,so you can not access this.name and all
+        console.log(this);//but inside this function it is referring to global window object not x ,
+        //so you can not access this.name and all
         console.log("My name is " + this.name);
         console.log("My role is " + this.role);
       }, 2000);

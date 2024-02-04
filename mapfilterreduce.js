@@ -13,8 +13,8 @@ function binary(x) {
   return x.toString(2);
 }
 
-const output = arr.map(binary); //map function at the backend is traversing
-//the arr elements and implementing everything passed on the insider method.
+const output = arr.map(binary); //map function at the backend is traversing the arr elements and implementing everything
+// passed on the insider method.
 
 //using Higher Order Function in short format we can remove the return statement
 //if it is an one-liner and the curly braces can also be removed.

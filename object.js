@@ -82,7 +82,7 @@ console.log(myobj)
 
 //Using Object.Assign
 const myobj1=Object.assign({},obj1,obj2,obj3); //this only works if the properties /keys of each object is different
-//here the {} referes to the target and rest is referred to the source so all the values after mergingwill be copied inside target 
+//here the {} referes to the target and rest is referred to the source so all the values after merging will be copied inside target 
 //block, Keep in mind that Object.assign() creates a shallow copy, meaning that if the properties themselves are objects, 
 //only their references are copied, not the objects they point to
 console.log(myobj1)

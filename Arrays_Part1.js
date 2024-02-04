@@ -12,10 +12,10 @@ console.log(myarr);
 console.log(myarr.includes(9)); //returns boolean and checks if the element exist or not in the array
 console.log(myarr.indexOf(3)); //returns index of the element
 
- const newArr = myarr.join()
+ const newArr = myarr.join()//join method converts array to a string in js
 
 console.log(myarr);
-console.log( typeof newArr); //join method converts array to a string in js
+console.log( typeof newArr); 
 
 // slice, splice
 console.log("A ", myarr); //original array

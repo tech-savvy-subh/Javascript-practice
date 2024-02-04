@@ -42,6 +42,6 @@ function addone(num){
 
 
 addTwo(5)//this will throw error as addTwo fucntion is a variable and wea re trying to access it before initialization
-const addTwo = function(num){
+const addTwo = function(num){ //ReferenceError: Cannot access 'addTwo' before initialization
     return num + 2
 }
