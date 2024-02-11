@@ -12,16 +12,16 @@ document.getElementById('owl').addEventListener('click',()=>{
 
 //In this case what will happen is, if any image other than japan one has been clicked we will see ul has been clicked
 //in console first
-// document.getElementById('images').addEventListener('click',()=>{
-//     console.log('ul has been clicked')
-// },true) //by default this value is false but if it is true first the parent will be captured and then child.
-// //If you keep it false or leave it as it is it will do the event propagation in a bubbling format
-// //But if we click on Japan then first japan has been clicked will come then it will go to parent element ul and print 
-// // ul has been clicked
-// document.getElementById('japan').addEventListener('click',(e)=>{
-//    // e.stopPropagation() //if this has been used then this event will not go up to parent element.
-//     console.log('japan has been clicked')
-// },true)
+document.getElementById('images').addEventListener('click',()=>{
+    console.log('ul has been clicked')
+},true) //by default this value is false but if it is true first the parent will be captured and then child.
+//If you keep it false or leave it as it is it will do the event propagation in a bubbling format
+//But if we click on Japan then first japan has been clicked will come then it will go to parent element ul and print 
+// ul has been clicked
+document.getElementById('japan').addEventListener('click',(e)=>{
+   // e.stopPropagation() //if this has been used then this event will not go up to parent element.
+    console.log('japan has been clicked')
+},true)//event propagation is false
 
 //All of this is known as event bubbling if the third paramter is kept false which is by default false anyways , event propagation
 //happens and event will bubbled to upper parent element 
@@ -29,7 +29,7 @@ document.getElementById('owl').addEventListener('click',()=>{
 
 //You don't want to send the request to google.com 
 document.getElementById('google').addEventListener('click',(e)=>{
-    e.preventDefault();
-    e.stopPropagation();
+    e.preventDefault(); //the request will not go to google.com cause we are stopping the default behaviour
+    e.stopPropagation();//if you want to stop event bubbling use this
     console.log('google clicked');
 })
