@@ -31,5 +31,10 @@ const changeText = (text1, text2) => {
   //console.log(change);
   
   //Let's clear it after clicking a stop button
+
+//SetTimeout(function/function reference,milliseconds) 
+//ClearTimeout(variable which hold the reference of settimeout)
+//SetInterval(function /functiom reference, milisecond) - repeat until we clear it. 
+//ClearInterval(variable which hold the reference of SetInterval)
   
   
